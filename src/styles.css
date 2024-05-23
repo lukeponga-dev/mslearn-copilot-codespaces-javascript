@@ -1,7 +1,6 @@
 /**
 * CSS file to hold styles that apply across the application
 */
-
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Montserrat:wght@200;400;600;800&display=swap");
 
 html,
@@ -118,8 +117,33 @@ a:hover {
   padding: 24px 16px;
   text-align: center;
 }
-
+ 
 img.socialIcon {
   height: 30px;
   width: 30px;
 }
+/* add an interesting anamation to the social icons on hover*/ 
+img.socialIcon:hover {
+  animation: bounce 0.5s;
+}
+
+/* bounce animation */
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+
+
+
+
+
